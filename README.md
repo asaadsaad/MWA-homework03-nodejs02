@@ -1,7 +1,7 @@
 # MWA Homework 03 - NodeJS 02
 ## Exercise 01
 Create a simple Node script that converts `www.mum.edu` domain name to the equivalent IP address.  
-Use `dns` core module, `resolve4()`.
+Use `dns` core module, `resolve4()`.  
 Note: Use `async/await` after converting the callback function to a `Promise` object.
   
 ## Exercise 02
