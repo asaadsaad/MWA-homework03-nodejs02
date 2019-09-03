@@ -1,8 +1,8 @@
 # MWA Homework 03 - NodeJS 02
 ## Exercise 01
 Create a simple Node script that converts `www.mum.edu` domain name to the equivalent IP address.  
-Use `dns` core module, `resolve4()`.  
-Note: Use `async/await` after converting the callback function to a `Promise` object.
+Use `dns` core module, `resolve4()`  
+Note: convert the callback function of `resolve4()` to a `Promise` object using `promisify` and then use `async/await`
   
 ## Exercise 02
 * Build a pseudo-class named `Gym` that emits a `boom` event every 1 second.  
