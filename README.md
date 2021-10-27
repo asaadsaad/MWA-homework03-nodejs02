@@ -5,9 +5,9 @@ Use `dns` core module, `resolve4()`
 Note: convert the callback function of `resolve4()` to a `Promise` object using `promisify` and then use `async/await`
   
 ## Exercise 02
-* Build a pseudo-class named `Gym` that emits a `boom` event every 1 second.  
+* Create a class named `Gym`, once instantiated, it emits a `boom` event every 1 second.  
 * Add a method `rest()` to stop the interval.  
-* Create an instance of `Gym` and bind to the `boom` event, printing `Athlete is working out` every time it gets one.
+* Create an instance of `Gym` and listen to the `boom` event, printing `Athlete is working out` every time it gets one.
   
 ## Exercise 03
 Write an **asynchronous** Node program that has a function `checkSystem()` that checks if the system memory size is at least 4 GB and the processor has more than 2 cores (use os core module).  
