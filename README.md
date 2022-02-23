@@ -5,7 +5,7 @@ Given a file located at the same folder `data.json` which contains the following
 ```json
 [{"id": 1, "name": "Asaad Saad"}, {"id": 2, "name": "Mike Saad"}]
 ```
-* Create a class named `Names`, once instantiated, it reads the JSON file, using `fs/promises` core module, and assigns its content to an instance property.
+* Create a class named `Names`, once instantiated, it reads the JSON file synchronously, and assigns its content to an instance property.
 * Add a method `getNames()` to emits the details about all the names with an event `names_all`.  
 * Add a method `getNameById(id)` to emits the details about the given `id` with an event `names_single`.  
 * Add a method `removeNameById(id)` to remove the details about the given `id` and emit an event `names_deleted`.  
