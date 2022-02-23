@@ -17,7 +17,7 @@ Test you code: create an instance of `Names` class, call all the methods and lis
 Write an **asynchronous** Node program that has a function `checkSystem()` that checks if the system memory size is at least 4 GB and the processor has at least 4 cores (use `os` core module).  
 * When you call the function, you should receive an immediate message on the console `Checking your system…`
 * If the system doesn't have enough memory we should print a message to the console: `This app needs at least 4 GB of RAM`
-* If the system doesn't have at least 2 cores, print this message to the console: `Processor is not supported`
+* If the system doesn't have at least 4 cores, print this message to the console: `Processor is not supported`
 * If the system has enough specs, print the following message `System is checked successfully.`  
   
 Note: use `async/await` when calling the function.
