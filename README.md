@@ -7,18 +7,18 @@ Given a file located at the same folder `data.json` which contains the following
 ```
 * Create a class named `Names`, once instantiated, it reads the JSON file synchronously, and assigns its content to an instance property.
 * Add a method `getNames()` to emits the details about all the names with an event `names_all`.  
-* Add a method `getNameById(id)` to emits the details about the given `id` with an event `names_single`.  
+* Add a method `getNameById(id)` to emits the details about the given `id` with an event `names_single`. 
 * Add a method `removeNameById(id)` to remove the details about the given `id` and emit an event `names_deleted`.  
-* Add a method `persist()` to write back the instance property of the names into the `data.json` file,  emit and event `names_saved` when the file is written successfully.  
+* Add a method `persist()` to write back the instance property of the names into the `data.json` file,  emit an event `names_saved` when the file is written successfully.  
   
 Test you code: create an instance of `Names` class, call all the methods and listen to all emitted events, print appropriate messages.
   
 ## Exercise 02
-Write an **asynchronous** Node program that has a function `checkSystem()` that checks if the system memory size is at least 4 GB and the processor has at least 4 cores (use `os` core module).  
-* When you call the function, you should receive an immediate message on the console `Checking your system…`
-* If the system doesn't have enough memory we should print a message to the console: `This app needs at least 4 GB of RAM`
-* If the system doesn't have at least 4 cores, print this message to the console: `Processor is not supported`
-* If the system has enough specs, print the following message `System is checked successfully.`  
+Write an **asynchronous** Node program that has a function `checkSystem()` that returns a Promise object and checks if the system memory size is at least 8 GB and the processor has at least 4 cores (use `os` core module).  
+* When you call the function, the console shows a message `Checking your system…`
+* If the system doesn't have enough memory we should reject with a message: `This app needs at least 4 GB of RAM`
+* If the system doesn't have at least 4 cores, reject with this message: `Processor is not supported`
+* If the system has enough specs, resolve with the following message `System is checked successfully.`  
   
 Note: use `async/await` when calling the function.
   
