@@ -1,20 +1,23 @@
-# MWA Homework 03 - NodeJS 02
+# MWA Homework - NodeJS Core Modules
   
 ## Exercise 01
 Given a file located at the same folder `data.json` which contains the following JSON structure:
 ```json
-[{"id": 1, "name": "Asaad Saad"}, {"id": 2, "name": "Mike Saad"}]
+[{"id": 1, "name": "Asaad Saad"}, {"id": 2, "name": "Mike Saad"}, {"id": 3, "name": "Mada Saad"}]
 ```
-* Create a class named `Names`, once instantiated, it reads the JSON file synchronously, and assigns its content to an instance property.
-* Add a method `getNames()` to emits the details about all the names with an event `names_all`.  
-* Add a method `getNameById(id)` to emits the details about the given `id` with an event `names_single`. 
-* Add a method `removeNameById(id)` to remove the details about the given `id` and emit an event `names_deleted`.  
-* Add a method `persist()` to write back the instance property of the names into the `data.json` file,  emit an event `names_saved` when the file is written successfully.  
+* Create a class `Names`, once instantiated, it reads the JSON file synchronously, and assigns its content to an instance property.
+* Add a method `getNames()` to emits an event `names_all` with all name details .  
+* Add a method `getNameById(id)` to emits an event `names_single` with the details about the given `id`. 
+* Add a method `removeNameById(id)` to emit an event `names_deleted` with a boolean and remove the details about the given `id`.  
+* Add a method `persist()` to write back the instance property of the names into the `data.json` file, and emit an event `names_saved` with a boolean to confirm that the file is written successfully.  
   
-Test you code: create an instance of `Names` class, call all the methods and listen to all emitted events, print appropriate messages.
+Test your code: 
+* create an instance of `Names` class
+* listen to all emitted events
+* call all the methods and print appropriate messages.
   
 ## Exercise 02
-Write an **asynchronous** Node program that has a function `checkSystem()` that returns a Promise object and checks if the system memory size is at least 8 GB and the processor has at least 4 cores (use `os` core module).  
+Create an **asynchronous** Node function `checkSystem()` that returns a Promise object and checks if the system memory size is at least 8 GB and the processor has at least 4 cores (use `os` core module).  
 * When you call the function, the console shows a message `Checking your system…`
 * If the system doesn't have enough memory we should reject with a message: `This app needs at least 4 GB of RAM`
 * If the system doesn't have at least 4 cores, reject with this message: `Processor is not supported`
